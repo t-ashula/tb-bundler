@@ -1,0 +1,20 @@
+fetch:
+  module: 'github'
+  config:
+    url: 'https://github.com/t-ashula/tb-pub-bundler.git'
+    base_remote_branch: 'master'
+    depth: 1
+
+update:
+  module: 'bundler'
+  config:
+
+publish:
+  module: 'github:pr'
+  config:
+    committer_name: toubun
+    committer_mail: t.ashula+toubun@gmail.com
+    commit_message: ':up: update dependencies'
+    pr_title: ':up: bundle update'
+    pr_body: ':rocket:'
+    pr_base_branch: 'master'
